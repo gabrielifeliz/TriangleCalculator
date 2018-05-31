@@ -32,11 +32,9 @@ public class TriangleCalculator {
         } else {
             System.out.println("This triangle is not equilateral");
 
-            if (Math.pow(side1, 2) == Math.sqrt((Math.pow(side2, 2) + Math.pow(side3, 2)))) {
-                System.out.println("This triangle is a right triangle");
-            } else if (Math.pow(side2, 2) == Math.sqrt((Math.pow(side1, 2) + Math.pow(side3, 2)))){
-                System.out.println("This triangle is a right triangle");
-            } else if (Math.pow(side3, 2) == Math.sqrt((Math.pow(side1, 2) + Math.pow(side2, 2)))){
+            if (Math.pow(side1, 2) == (Math.pow(side2, 2) + Math.pow(side3, 2))
+                  ||  Math.pow(side2, 2) == (Math.pow(side1, 2) + Math.pow(side3, 2))
+                  ||  Math.pow(side3, 2) == (Math.pow(side1, 2) + Math.pow(side2, 2))){
                 System.out.println("This triangle is a right triangle");
             } else {
                 System.out.println("This triangle is not a right triangle");
